@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - I Love Image Splitter</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass-card {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .animate-pulse-slow {
+            animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+            margin: 2rem 0;
+        }
+        
+        .privacy-highlight {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin: 1.5rem 0;
+        }
+        @media (max-width: 768px) {
+             .main-section{
+                zoom: 0.7;
+             }
+        }
+
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-white min-h-screen main-section">
+    <nav class="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="relative">
+                        <i class="fas fa-heart text-pink-500 text-2xl mr-3 animate-pulse-slow"></i>
+                        <div class="absolute -top-1 -right-1 w-2 h-2 bg-pink-400 rounded-full animate-ping"></div>
+                    </div>
+                    <span class="text-xl font-bold gradient-text">I Love Image Splitter</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-500 transition-all duration-300 font-medium relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="terms.html" class="text-gray-700 hover:text-pink-500 transition-all duration-300 font-medium relative group">
+                        Terms
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="privacy.html" class="text-pink-500 font-medium relative">
+                        Privacy
+                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-pink-500"></span>
+                    </a>
+                    <a href="license.html" class="text-gray-700 hover:text-pink-500 transition-all duration-300 font-medium relative group">
+                        License
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-gray-700 hover:text-pink-500 transition-colors">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-100 mt-4">
+                <a href="index.html" class="block py-3 text-gray-700 hover:text-pink-500 transition-colors font-medium">Home</a>
+                <a href="terms.html" class="block py-3 text-gray-700 hover:text-pink-500 transition-colors font-medium">Terms</a>
+                <a href="privacy.html" class="block py-3 text-pink-500 font-medium">Privacy</a>
+                <a href="license.html" class="block py-3 text-gray-700 hover:text-pink-500 transition-colors font-medium">License</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-16">
+            <h1 class="text-5xl md:text-6xl font-black gradient-text mb-6">Privacy Policy</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Your privacy is our top priority. Learn how we protect your data and images.</p>
+            <div class="mt-6 inline-flex items-center space-x-2 text-sm text-gray-500">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Last updated: December 2024</span>
+            </div>
+        </div>
+
+        <div class="privacy-highlight text-center mb-12">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-shield-alt text-4xl mr-4"></i>
+                <div>
+                    <h3 class="text-2xl font-bold">100% Local Processing</h3>
+                    <p class="text-lg opacity-90">Your images never leave your device. All processing happens in your browser.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card rounded-3xl p-8 md:p-12">
+            <div class="prose prose-lg max-w-none">
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-info-circle mr-4 text-blue-500"></i>
+                        1. Information We Collect
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        I Love Image Splitter is designed with privacy-first principles. We do not collect, store, or transmit any of your personal images or sensitive data. Here's what we may collect:
+                    </p>
+                    <div class="bg-blue-50 rounded-2xl p-6">
+                        <h4 class="font-bold text-gray-800 mb-4">Anonymous Usage Data:</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span>Page views and feature usage statistics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span>Browser type and device information</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span>Error logs for debugging and improvement</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-laptop mr-4 text-purple-500"></i>
+                        2. Local Processing Technology
+                    </h2>
+                    <div class="bg-purple-50 rounded-2xl p-6 mb-6">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            All image splitting and processing occurs entirely within your web browser using advanced JavaScript and HTML5 Canvas technology. This means:
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-green-50 rounded-xl p-6">
+                            <h4 class="font-bold text-green-800 mb-3 flex items-center">
+                                <i class="fas fa-check-circle mr-2"></i>
+                                What We DO
+                            </h4>
+                            <ul class="space-y-2 text-green-700">
+                                <li>Process images locally in your browser</li>
+                                <li>Provide instant results without uploads</li>
+                                <li>Ensure complete data privacy</li>
+                                <li>Offer offline functionality</li>
+                            </ul>
+                        </div>
+                        <div class="bg-red-50 rounded-xl p-6">
+                            <h4 class="font-bold text-red-800 mb-3 flex items-center">
+                                <i class="fas fa-times-circle mr-2"></i>
+                                What We DON'T DO
+                            </h4>
+                            <ul class="space-y-2 text-red-700">
+                                <li>Upload your images to servers</li>
+                                <li>Store your images anywhere</li>
+                                <li>Share your content with third parties</li>
+                                <li>Track your image content</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-cookie-bite mr-4 text-yellow-500"></i>
+                        3. Cookies and Local Storage
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        We may use cookies and local storage to enhance your experience and remember your preferences:
+                    </p>
+                    <div class="bg-yellow-50 rounded-2xl p-6">
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-cog text-yellow-600 mr-3 mt-1"></i>
+                                <span><strong>Preference Cookies:</strong> Remember your preferred grid sizes and download formats</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chart-line text-yellow-600 mr-3 mt-1"></i>
+                                <span><strong>Analytics Cookies:</strong> Help us understand how users interact with our tool (anonymous data only)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-tools text-yellow-600 mr-3 mt-1"></i>
+                                <span><strong>Functional Cookies:</strong> Ensure the tool works properly across different browsers</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-users mr-4 text-indigo-500"></i>
+                        4. Third-Party Services
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        We may use trusted third-party services to improve our tool and understand user behavior:
+                    </p>
+                    <div class="bg-indigo-50 rounded-2xl p-6">
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-chart-bar text-indigo-600 mr-3 mt-1"></i>
+                                <span><strong>Analytics Services:</strong> Google Analytics or similar for anonymous usage statistics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-tachometer-alt text-indigo-600 mr-3 mt-1"></i>
+                                <span><strong>Performance Monitoring:</strong> Services to monitor site speed and reliability</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-cloud text-indigo-600 mr-3 mt-1"></i>
+                                <span><strong>CDN Services:</strong> Content delivery networks for faster loading times</span>
+                            </li>
+                        </ul>
+                        <p class="text-sm text-indigo-700 mt-4 font-medium">
+                            Important: These services never have access to your images or personal content.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-lock mr-4 text-green-500"></i>
+                        5. Data Security
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        Since your images are processed locally and never transmitted to our servers, they remain completely secure on your device. Additional security measures include:
+                    </p>
+                    <div class="bg-green-50 rounded-2xl p-6">
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-shield-alt text-green-600 mr-3 mt-1"></i>
+                                <span><strong>HTTPS Encryption:</strong> All connections are secured with SSL/TLS encryption</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-memory text-green-600 mr-3 mt-1"></i>
+                                <span><strong>Memory Management:</strong> Images are cleared from browser memory after processing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-code text-green-600 mr-3 mt-1"></i>
+                                <span><strong>Secure Code:</strong> Regular security audits and updates to our codebase</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-user-cog mr-4 text-orange-500"></i>
+                        6. Your Rights and Choices
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        You have full control over your privacy when using our tool:
+                    </p>
+                    <div class="bg-orange-50 rounded-2xl p-6">
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-toggle-on text-orange-600 mr-3 mt-1"></i>
+                                <span><strong>Cookie Control:</strong> Disable cookies in your browser settings if preferred</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-eye-slash text-orange-600 mr-3 mt-1"></i>
+                                <span><strong>Private Browsing:</strong> Use incognito/private mode for additional privacy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-download text-orange-600 mr-3 mt-1"></i>
+                                <span><strong>Offline Usage:</strong> Tool works offline once loaded, no internet required</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-baby mr-4 text-pink-500"></i>
+                        7. Children's Privacy
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Our service is safe for users of all ages. Since we don't collect personal information or store images, there are no special privacy concerns for children. However, we recommend parental supervision for users under 13 years of age when using any online tool.
+                    </p>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-edit mr-4 text-purple-500"></i>
+                        8. Changes to This Policy
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify users of any material changes by posting the new Privacy Policy on this page and updating the "Last updated" date.
+                    </p>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-8">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-envelope mr-4 text-blue-500"></i>
+                        9. Contact Us
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        If you have any questions about this Privacy Policy or our privacy practices, please don't hesitate to contact us. We're committed to transparency and will respond to your inquiries promptly.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="index.html" class="inline-flex items-center bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-xl">
+                <i class="fas fa-arrow-left mr-3"></i>
+                Back to Image Splitter
+            </a>
+        </div>
+    </div>
+
+    <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-heart text-pink-500 text-2xl mr-3 animate-pulse-slow"></i>
+                    <span class="text-xl font-bold">I Love Image Splitter</span>
+                </div>
+                <p class="text-gray-400 mb-6">Your privacy is our priority</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-white transition-colors">Terms</a>
+                    <a href="privacy.html" class="text-pink-500">Privacy</a>
+                    <a href="license.html" class="text-gray-400 hover:text-white transition-colors">License</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - I Love Image Splitter</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass-card {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .animate-pulse-slow {
+            animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+             .main-section{
+                zoom: 0.7;
+             }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-white min-h-screen main-section">
+    <nav class="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="relative">
+                        <i class="fas fa-heart text-pink-500 text-2xl mr-3 animate-pulse-slow"></i>
+                        <div class="absolute -top-1 -right-1 w-2 h-2 bg-pink-400 rounded-full animate-ping"></div>
+                    </div>
+                    <span class="text-xl font-bold gradient-text">I Love Image Splitter</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-500 transition-all duration-300 font-medium relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="terms.html" class="text-pink-500 font-medium relative">
+                        Terms
+                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-pink-500"></span>
+                    </a>
+                    <a href="privacy.html" class="text-gray-700 hover:text-pink-500 transition-all duration-300 font-medium relative group">
+                        Privacy
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="license.html" class="text-gray-700 hover:text-pink-500 transition-all duration-300 font-medium relative group">
+                        License
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-gray-700 hover:text-pink-500 transition-colors">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-100 mt-4">
+                <a href="index.html" class="block py-3 text-gray-700 hover:text-pink-500 transition-colors font-medium">Home</a>
+                <a href="terms.html" class="block py-3 text-pink-500 font-medium">Terms</a>
+                <a href="privacy.html" class="block py-3 text-gray-700 hover:text-pink-500 transition-colors font-medium">Privacy</a>
+                <a href="license.html" class="block py-3 text-gray-700 hover:text-pink-500 transition-colors font-medium">License</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-16">
+            <h1 class="text-5xl md:text-6xl font-black gradient-text mb-6">Terms and Conditions</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Please read these terms carefully before using our image splitter tool</p>
+            <div class="mt-6 inline-flex items-center space-x-2 text-sm text-gray-500">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Last updated: December 2024</span>
+            </div>
+        </div>
+
+        <div class="glass-card rounded-3xl p-8 md:p-12">
+            <div class="prose prose-lg max-w-none">
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-handshake mr-4 text-pink-500"></i>
+                        1. Acceptance of Terms
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        By accessing and using I Love Image Splitter ("the Service"), you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by the above, please do not use this service.
+                    </p>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-key mr-4 text-purple-500"></i>
+                        2. Use License
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        Permission is granted to temporarily use I Love Image Splitter for personal and commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+                    </p>
+                    <div class="bg-gray-50 rounded-2xl p-6 mb-6">
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-times-circle text-red-500 mr-3 mt-1"></i>
+                                <span>Modify or copy the materials without permission</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times-circle text-red-500 mr-3 mt-1"></i>
+                                <span>Use the materials for any commercial purpose without authorization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times-circle text-red-500 mr-3 mt-1"></i>
+                                <span>Attempt to reverse engineer any software contained on the website</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times-circle text-red-500 mr-3 mt-1"></i>
+                                <span>Remove any copyright or other proprietary notations from the materials</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-exclamation-triangle mr-4 text-yellow-500"></i>
+                        3. Disclaimer
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        The materials on I Love Image Splitter are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                    </p>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-shield-alt mr-4 text-blue-500"></i>
+                        4. Limitations
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        In no event shall I Love Image Splitter or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on the website, even if we or our authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+                    </p>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-user-shield mr-4 text-green-500"></i>
+                        5. Privacy and Data Protection
+                    </h2>
+                    <div class="bg-green-50 rounded-2xl p-6 mb-6">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            Your privacy is important to us. All image processing is done locally in your browser, and no images are uploaded to our servers. We do not collect, store, or transmit any of your personal images or sensitive data. Please review our Privacy Policy for more detailed information about our data practices.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-gavel mr-4 text-indigo-500"></i>
+                        6. Governing Law
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        These terms and conditions are governed by and construed in accordance with the laws of the jurisdiction in which the service operates, and you irrevocably submit to the exclusive jurisdiction of the courts in that state or location for the resolution of any disputes.
+                    </p>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-edit mr-4 text-orange-500"></i>
+                        7. Changes to Terms
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        We reserve the right to revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of service. We will notify users of any material changes through our website or other appropriate means.
+                    </p>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="mb-8">
+                    <h2 class="text-3xl font-bold gradient-text mb-6 flex items-center">
+                        <i class="fas fa-envelope mr-4 text-pink-500"></i>
+                        8. Contact Information
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        If you have any questions about these Terms and Conditions, please contact us through our website. We are committed to addressing your concerns and providing clarity on any aspect of our terms.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="index.html" class="inline-flex items-center bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-xl">
+                <i class="fas fa-arrow-left mr-3"></i>
+                Back to Image Splitter
+            </a>
+        </div>
+    </div>
+
+    <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-heart text-pink-500 text-2xl mr-3 animate-pulse-slow"></i>
+                    <span class="text-xl font-bold">I Love Image Splitter</span>
+                </div>
+                <p class="text-gray-400 mb-6">Made with love for content creators worldwide</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="terms.html" class="text-pink-500">Terms</a>
+                    <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy</a>
+                    <a href="license.html" class="text-gray-400 hover:text-white transition-colors">License</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

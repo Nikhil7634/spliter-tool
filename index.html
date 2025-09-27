@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love Image Splitter - Instagram Grid & Carousel Tool</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="bg-gray-50 main-section">
+    <nav class="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="relative">
+                        <i class="fas fa-heart text-pink-500 text-2xl mr-3 animate-pulse-slow"></i>
+                        <div class="absolute -top-1 -right-1 w-2 h-2 bg-pink-400 rounded-full animate-ping"></div>
+                    </div>
+                    <span class="text-xl font-bold gradient-text">I Love Image Splitter</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-500 transition-all duration-300 font-medium relative group">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="terms.html" class="text-gray-700 hover:text-pink-500 transition-all duration-300 font-medium relative group">
+                        Terms
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="privacy.html" class="text-gray-700 hover:text-pink-500 transition-all duration-300 font-medium relative group">
+                        Privacy
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="license.html" class="text-gray-700 hover:text-pink-500 transition-all duration-300 font-medium relative group">
+                        License
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-gray-700 hover:text-pink-500 transition-colors">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-100 mt-4">
+                <a href="index.html" class="block py-3 text-gray-700 hover:text-pink-500 transition-colors font-medium">Home</a>
+                <a href="terms.html" class="block py-3 text-gray-700 hover:text-pink-500 transition-colors font-medium">Terms</a>
+                <a href="privacy.html" class="block py-3 text-gray-700 hover:text-pink-500 transition-colors font-medium">Privacy</a>
+                <a href="license.html" class="block py-3 text-gray-700 hover:text-pink-500 transition-colors font-medium">License</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-gradient text-white py-24 relative">
+        <div class="floating-shapes">
+            <svg class="shape w-32 h-32" viewBox="0 0 100 100" fill="currentColor">
+                <circle cx="50" cy="50" r="40"/>
+            </svg>
+            <svg class="shape w-24 h-24" viewBox="0 0 100 100" fill="currentColor">
+                <polygon points="50,10 90,90 10,90"/>
+            </svg>
+            <svg class="shape w-28 h-28" viewBox="0 0 100 100" fill="currentColor">
+                <rect x="25" y="25" width="50" height="50" rx="10"/>
+            </svg>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="animate-slide-up opacity-0">
+                <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight">
+                    Split Images for
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-yellow-300 animate-pulse-slow">
+                        Instagram Magic
+                    </span>
+                </h1>
+            </div>
+            
+            <div class="animate-slide-up opacity-0 stagger-2">
+                <p class="text-xl md:text-2xl mb-12 opacity-90 max-w-3xl mx-auto leading-relaxed">
+                    Transform your images into stunning Instagram grids and carousels with our powerful, 
+                    privacy-focused splitting tool. Create viral content that stands out.
+                </p>
+            </div>
+            
+            <div class="animate-slide-up opacity-0 stagger-3">
+                <button onclick="document.getElementById('tool-section').scrollIntoView({behavior: 'smooth'})" 
+                        class="btn-primary text-white px-12 py-5 rounded-full text-lg font-bold shadow-2xl relative overflow-hidden group">
+                    <span class="relative z-10">Start Creating Magic</span>
+                    <i class="fas fa-sparkles ml-3 animate-bounce-slow relative z-10"></i>
+                </button>
+            </div>
+            
+            <div class="animate-slide-up opacity-0 stagger-4 mt-16">
+                <div class="flex justify-center items-center space-x-8 text-sm opacity-80">
+                    <div class="flex items-center">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        <span>100% Private</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-bolt mr-2"></i>
+                        <span>Lightning Fast</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-mobile-alt mr-2"></i>
+                        <span>Mobile Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tool-section" class="pt-20 bg-gradient-to-br from-gray-50 to-white relative">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Image Splitter Tool</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Upload your masterpiece and watch it transform into perfect Instagram grid pieces</p>
+            </div>
+
+            <div class="glass-card rounded-3xl p-8 mb-12">
+                <div class="text-center">
+                    <div id="upload-area" class="upload-area border-3 border-dashed border-gray-300 rounded-2xl p-16 cursor-pointer transition-all duration-300">
+                        <div class="animate-bounce-slow">
+                            <i class="fas fa-cloud-upload-alt text-6xl text-gray-400 mb-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-700 mb-4">Drop your image here</h3>
+                        <p class="text-lg text-gray-600 mb-2">or click to browse your files</p>
+                        <p class="text-sm text-gray-500">Supports JPG, PNG, WEBP, GIF formats • Max 10MB</p>
+                        <input type="file" id="image-input" accept="image/*" class="hidden">
+                    </div>
+                </div>
+            </div>
+
+            <div id="controls" class="hidden glass-card rounded-3xl p-8 mb-12">
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div class="space-y-3">
+                        <label class="block text-sm font-bold text-gray-700 uppercase tracking-wide">Grid Rows</label>
+                        <select id="rows" class="w-full p-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-pink-500/20 focus:border-pink-500 transition-all duration-300 bg-white font-medium">
+                            <option value="1">1 Row</option>
+                            <option value="2">2 Rows</option>
+                            <option value="3" selected>3 Rows</option>
+                            <option value="4">4 Rows</option>
+                            <option value="5">5 Rows</option>
+                            <option value="6">6 Rows</option>
+                            <option value="7">7 Rows</option>
+                            <option value="8">8 Rows</option>
+                            <option value="9">9 Rows</option>
+                            <option value="10">10 Rows</option>
+                        </select>
+                    </div>
+                    <div class="space-y-3">
+                        <label class="block text-sm font-bold text-gray-700 uppercase tracking-wide">Grid Columns</label>
+                        <select id="columns" class="w-full p-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-pink-500/20 focus:border-pink-500 transition-all duration-300 bg-white font-medium">
+                            <option value="1">1 Column</option>
+                            <option value="2">2 Columns</option>
+                            <option value="3" selected>3 Columns</option>
+                            <option value="4">4 Columns</option>
+                            <option value="5">5 Columns</option>
+                            <option value="6">6 Columns</option>
+                            <option value="7">7 Columns</option>
+                            <option value="8">8 Columns</option>
+                            <option value="9">9 Columns</option>
+                            <option value="10">10 Columns</option>
+                        </select>
+                    </div>
+                    <div class="space-y-3">
+                        <label class="block text-sm font-bold text-gray-700 uppercase tracking-wide">Download Format</label>
+                        <select id="format" class="w-full p-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-pink-500/20 focus:border-pink-500 transition-all duration-300 bg-white font-medium">
+                            <option value="png">PNG (Best Quality)</option>
+                            <option value="jpg">JPG (Smaller Size)</option>
+                            <option value="jpeg">JPEG (Smaller Size)</option>
+                            <option value="webp">WebP (Modern Format)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="splitImage()" class="flex-1 btn-primary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl relative overflow-hidden">
+                        <i class="fas fa-cut mr-3"></i>Split Image
+                    </button>
+                    <button onclick="downloadAll()" id="download-btn" class="flex-1 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-green-600 hover:to-emerald-700 transition-all duration-300 shadow-xl hidden">
+                        <i class="fas fa-download mr-3"></i>Download All
+                    </button>
+                    <button onclick="downloadAllAsZip()" id="download-zip-btn" class="flex-1 bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-purple-600 hover:to-indigo-700 transition-all duration-300 shadow-xl hidden">
+                        <i class="fas fa-file-archive mr-3"></i>Download ZIP
+                    </button>
+                </div>
+            </div>
+
+            <div id="preview-section" class="hidden glass-card rounded-3xl p-8">
+                <h3 class="text-2xl font-bold gradient-text mb-8 text-center">Preview & Download</h3>
+                <div id="grid-preview" class="grid-preview mb-8"></div>
+                <div class="text-center">
+                    <p class="text-gray-600 mb-4 text-lg">Click on individual pieces to download, or use the "Download All" button above</p>
+                    <div class="inline-flex items-center space-x-2 text-sm text-gray-500">
+                        <i class="fas fa-info-circle"></i>
+                        <span>All processing happens in your browser - your images never leave your device</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class=" bg-gradient-to-br from-white to-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Why Choose Our Tool?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Experience the most powerful and user-friendly image splitting tool designed for modern content creators</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card glass-card rounded-2xl p-8 text-center">
+                    <div class="bg-gradient-to-br from-pink-500 to-rose-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                         <i class="fa-solid fa-bolt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Lightning Fast</h3>
+                    <p class="text-gray-600 leading-relaxed">Split your images in milliseconds with our optimized processing engine. No waiting, just instant results.</p>
+                </div>
+                
+                <div class="feature-card glass-card rounded-2xl p-8 text-center">
+                    <div class="bg-gradient-to-br from-purple-500 to-indigo-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-mobile-alt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Mobile Optimized</h3>
+                    <p class="text-gray-600 leading-relaxed">Perfect experience on all devices. Create content on-the-go with our responsive design.</p>
+                </div>
+                
+                <div class="feature-card glass-card rounded-2xl p-8 text-center">
+                    <div class="bg-gradient-to-br from-blue-500 to-cyan-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-shield-alt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">100% Secure</h3>
+                    <p class="text-gray-600 leading-relaxed">Your images are processed locally in your browser. Complete privacy guaranteed - no uploads to servers.</p>
+                </div>
+                
+                <div class="feature-card glass-card rounded-2xl p-8 text-center">
+                    <div class="bg-gradient-to-br from-green-500 to-teal-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-download text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Multiple Formats</h3>
+                    <p class="text-gray-600 leading-relaxed">Download in PNG, JPG, JPEG, or WebP. Choose the perfect format for your needs.</p>
+                </div>
+                
+                <div class="feature-card glass-card rounded-2xl p-8 text-center">
+                    <div class="bg-gradient-to-br from-yellow-500 to-orange-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-th text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Flexible Grids</h3>
+                    <p class="text-gray-600 leading-relaxed">Create any grid size from 1x1 to 10x10. Perfect for Instagram posts, stories, and carousels.</p>
+                </div>
+                
+                <div class="feature-card glass-card rounded-2xl p-8 text-center">
+                    <div class="bg-gradient-to-br from-red-500 to-pink-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-heart text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Made with Love</h3>
+                    <p class="text-gray-600 leading-relaxed">Crafted by passionate creators for the Instagram community. Built to inspire and empower.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="py-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)" />
+            </svg>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">About Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Passionate creators building tools that empower the Instagram community</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div style="zoom: 0.8;" class="space-y-8">
+                    <div class="glass-card rounded-3xl p-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="bg-gradient-to-br from-pink-500 to-rose-600 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-users text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">We believe every creator deserves access to professional-grade tools without the complexity or cost. Our mission is to democratize content creation by providing powerful, intuitive tools that anyone can use to create stunning Instagram content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card rounded-3xl p-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="bg-gradient-to-br from-purple-500 to-indigo-600 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-rocket text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">To become the go-to platform for content creators worldwide, offering a suite of privacy-focused, browser-based tools that inspire creativity and help creators build their personal brands with confidence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card rounded-3xl p-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="bg-gradient-to-br from-blue-500 to-cyan-600 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-heart text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Values</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">Privacy first, user-centric design, and genuine care for the creative community. We build tools that respect your data, enhance your workflow, and celebrate your unique creative voice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="glass-card rounded-3xl p-12 text-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-purple-600/10"></div>
+                        <div class="relative z-10">
+                            <div class="w-32 h-32 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full mx-auto mb-8 flex items-center justify-center shadow-2xl">
+                                <i class="fas fa-heart text-white text-5xl animate-pulse-slow"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold gradient-text mb-6">Built with Love</h3>
+                            <p class="text-gray-600 leading-relaxed text-lg mb-8">Every line of code, every design decision, and every feature is crafted with genuine care for the creative community. We're not just building tools – we're empowering dreams.</p>
+                            
+                            <div class="grid grid-cols-3 gap-6 text-center">
+                                <div>
+                                    <div class="text-3xl font-bold gradient-text">100K+</div>
+                                    <div class="text-sm text-gray-600 font-medium">Images Split</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl font-bold gradient-text">50K+</div>
+                                    <div class="text-sm text-gray-600 font-medium">Happy Creators</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl font-bold gradient-text">100%</div>
+                                    <div class="text-sm text-gray-600 font-medium">Privacy Protected</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="py-10 bg-gradient-to-br from-gray-50 to-white relative">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #667eea 0%, transparent 50%), radial-gradient(circle at 75% 75%, #764ba2 0%, transparent 50%);"></div>
+        </div>
+        
+        <div   class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Powerful Features</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover all the amazing capabilities that make our image splitter the best choice for content creators</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <div class="space-y-8">
+                    <div class="feature-card glass-card rounded-2xl p-8 flex items-start space-x-6">
+                        <div class="bg-gradient-to-br from-emerald-500 to-teal-600 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-th-large text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Flexible Grid Sizes</h3>
+                            <p class="text-gray-600 leading-relaxed">Choose from 1x1 up to 10x10 grid configurations. Perfect for Instagram posts, stories, carousels, and complex artistic layouts.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card glass-card rounded-2xl p-8 flex items-start space-x-6">
+                        <div class="bg-gradient-to-br from-blue-500 to-indigo-600 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-file-archive text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Bulk Download (ZIP)</h3>
+                            <p class="text-gray-600 leading-relaxed">Download all split pieces at once in a convenient ZIP file. Save time and keep your workflow smooth and efficient.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card glass-card rounded-2xl p-8 flex items-start space-x-6">
+                        <div class="bg-gradient-to-br from-purple-500 to-pink-600 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-images text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Multiple Formats</h3>
+                            <p class="text-gray-600 leading-relaxed">Export in PNG for highest quality, JPG/JPEG for smaller files, or WebP for modern web optimization. Your choice, your needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card glass-card rounded-2xl p-8 flex items-start space-x-6">
+                        <div class="bg-gradient-to-br from-orange-500 to-red-600 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-eye text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Live Preview</h3>
+                            <p class="text-gray-600 leading-relaxed">See exactly how your split image will look before downloading. Interactive preview with hover effects and instant feedback.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="feature-card glass-card rounded-2xl p-8 flex items-start space-x-6">
+                        <div class="bg-gradient-to-br from-cyan-500 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-upload text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Drag & Drop Upload</h3>
+                            <p class="text-gray-600 leading-relaxed">Simply drag your image onto the upload area or click to browse. Supports all major image formats with intelligent file validation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card glass-card rounded-2xl p-8 flex items-start space-x-6">
+                        <div class="bg-gradient-to-br from-green-500 to-emerald-600 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-lock text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Complete Privacy</h3>
+                            <p class="text-gray-600 leading-relaxed">All processing happens locally in your browser. Your images never leave your device, ensuring complete privacy and security.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card glass-card rounded-2xl p-8 flex items-start space-x-6">
+                        <div class="bg-gradient-to-br from-yellow-500 to-orange-600 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Mobile Responsive</h3>
+                            <p class="text-gray-600 leading-relaxed">Perfect experience on all devices. Touch-friendly interface optimized for smartphones, tablets, and desktop computers.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card glass-card rounded-2xl p-8 flex items-start space-x-6">
+                        <div class="bg-gradient-to-br from-pink-500 to-rose-600 w-16 h-16 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-zap text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Instant Processing</h3>
+                            <p class="text-gray-600 leading-relaxed">Lightning-fast image processing with optimized algorithms. No waiting, no delays – just instant results every time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <div class="glass-card rounded-3xl p-12 max-w-7xl mx-auto">
+                    <h3 class="text-3xl font-bold gradient-text mb-2">Ready to Create Amazing Content?</h3>
+                    <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Join thousands of content creators who trust our tool to split their images and create viral Instagram content.</p>
+                    <button onclick="document.getElementById('tool-section').scrollIntoView({behavior: 'smooth'})" 
+                            class="btn-primary text-white px-12 py-5 rounded-full text-lg font-bold shadow-2xl relative overflow-hidden">
+                        <span class="relative z-10">Start Splitting Images</span>
+                        <i class="fas fa-arrow-right ml-3 relative z-10"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="py-5 bg-gradient-to-br from-gray-50 to-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">Everything you need to know about our image splitter tool</p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="faq-item glass-card rounded-2xl p-8 overflow-hidden">
+                    <button onclick="toggleFAQ(1)" class="w-full text-left  focus:outline-none hover:bg-gray-50/50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-gray-800">How does the image splitter work?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300" id="faq-icon-1"></i>
+                        </div>
+                    </button>
+                    <div id="faq-content-1" class="faq-content mt-2">
+                        <p class="text-gray-600 leading-relaxed text-lg">Simply upload your image, select the desired grid size (rows and columns), and click "Split Image". Our advanced algorithm automatically divides your image into perfectly sized pieces that you can download individually or all at once. The entire process happens in your browser for maximum privacy and speed.</p>
+                    </div>
+                </div> 
+                
+                <div class="faq-item glass-card rounded-2xl p-8 overflow-hidden">
+                    <button onclick="toggleFAQ(2)" class="w-full text-left  focus:outline-none hover:bg-gray-50/50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-gray-800">What image formats are supported?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300" id="faq-icon-2"></i>
+                        </div>
+                    </button>
+                    <div id="faq-content-2" class="faq-content mt-2">
+                        <p class="text-gray-600 leading-relaxed text-lg">We support all major image formats including JPG, PNG, WebP, and GIF for upload. You can download your split images in PNG (best quality), JPG/JPEG (smaller file size), or WebP (modern format with excellent compression). Choose the format that best suits your needs and platform requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card rounded-2xl p-8 overflow-hidden">
+                    <button onclick="toggleFAQ(3)" class="w-full text-left  focus:outline-none hover:bg-gray-50/50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Is my image data secure and private?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300" id="faq-icon-3"></i>
+                        </div>
+                    </button>
+                    <div id="faq-content-3" class="faq-content mt-2">
+                        <p class="text-gray-600 leading-relaxed text-lg">All image processing happens locally in your browser using advanced JavaScript technology. Your images are never uploaded to our servers or transmitted anywhere. This ensures complete privacy, faster processing, and eliminates any risk of data breaches. Your creative content stays 100% yours.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-card rounded-2xl p-8 overflow-hidden">
+                    <button onclick="toggleFAQ(4)" class="w-full text-left focus:outline-none hover:bg-gray-50/50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-gray-800">What's the maximum grid size available?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300" id="faq-icon-4"></i>
+                        </div>
+                    </button>
+                    <div id="faq-content-4" class="faq-content mt-2 ">
+                        <p class="text-gray-600 leading-relaxed text-lg">You can create grids up to 10x10 (100 pieces total). This covers all popular Instagram grid layouts including 3x3 for classic grid posts, 1x3 for carousel posts, and larger grids for more complex artistic layouts. The flexible grid system adapts to your creative vision.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card rounded-2xl p-8 overflow-hidden">
+                    <button onclick="toggleFAQ(5)" class="w-full text-left focus:outline-none hover:bg-gray-50/50 transition-colors">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Can I use this tool on mobile devices?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform duration-300" id="faq-icon-5"></i>
+                        </div>
+                    </button>
+                    <div id="faq-content-5" class="faq-content mt-2">
+                        <p class="text-gray-600 leading-relaxed text-lg">Yes! Our tool is fully responsive and optimized for all devices including smartphones, tablets, and desktop computers. The interface automatically adapts to your screen size, providing an optimal experience whether you're creating content on-the-go or at your desk. Touch-friendly controls make mobile usage seamless.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-heart text-pink-500 text-3xl mr-3 animate-pulse-slow"></i>
+                        <span class="text-2xl font-bold">I Love Image Splitter</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 text-lg leading-relaxed">The ultimate tool for creating Instagram grids and carousels. Transform your images into viral content with precision, privacy, and love.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-pink-500 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-pink-500 transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors text-lg">Home</a></li>
+                        <li><a href="#tool-section" onclick="document.getElementById('tool-section').scrollIntoView({behavior: 'smooth'})" class="text-gray-300 hover:text-white transition-colors text-lg">Tool</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-lg">Features</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-lg">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="terms.html" class="text-gray-300 hover:text-white transition-colors text-lg">Terms & Conditions</a></li>
+                        <li><a href="privacy.html" class="text-gray-300 hover:text-white transition-colors text-lg">Privacy Policy</a></li>
+                        <li><a href="license.html" class="text-gray-300 hover:text-white transition-colors text-lg">License Agreement</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400 text-lg">&copy; 2025 I Love Image Splitter. Made with <i class="fas fa-heart text-pink-500 animate-pulse-slow"></i> for content creators worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="main.js">
+        
+    </script>
+</body>
+</html>
